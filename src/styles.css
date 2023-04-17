@@ -1,0 +1,62 @@
+/*
+body {
+  font-family: sans-serif;
+}
+*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("hero-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title_area {
+  position: relative;
+  z-index: 2;
+}
+.title_area h1 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.num_area {
+}
+.num_area p {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.btn_area button {
+  width: 100px;
+  height: 25px;
+  background: #166cea;
+  color: #fff;
+  font-size: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
